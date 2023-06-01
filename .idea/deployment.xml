@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="192.168.58.9 (84008b17-47c9-4707-ba05-039d32ed5e77)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.WHU7Yf6gij" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-visual-studio-2019" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-linux" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
