@@ -2083,7 +2083,7 @@ void redisClusterFree(redisClusterContext *cc) {
     free(cc);
 }
 
-void redisClusterKeepAlive(redisClusterContext *cc) {
+void redisClusterPing(redisClusterContext *cc) {
     dictIterator *di;
     dictEntry *de;
     struct cluster_node *node;

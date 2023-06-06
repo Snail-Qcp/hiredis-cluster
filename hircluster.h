@@ -113,7 +113,7 @@ void redisClusterFree(redisClusterContext *cc);
 //this function will send ping command to all nodes
 //if the command reply is null all error occured
 //then the redisReconnect will be called
-void redisClusterKeepAlive(redisClusterContext *cc);
+void redisClusterPing(redisClusterContext *cc);
 
 int redisClusterSetOptionAddNode(redisClusterContext *cc, const char *addr);
 int redisClusterSetOptionAddNodes(redisClusterContext *cc, const char *addrs);

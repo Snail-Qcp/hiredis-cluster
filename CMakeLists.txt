@@ -20,9 +20,9 @@ file(GLOB SRC_FILES
 
 add_library(${PROJECT_NAME} ${SRC_FILES})
 
-set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../libredis)
 
-message("lib输出目录是: ${LIBRARY_OUTPUT_PATH}")
+message("lib output path: ${LIBRARY_OUTPUT_PATH}")
 
 # 设置多个编译器选项
 if (WIN32)

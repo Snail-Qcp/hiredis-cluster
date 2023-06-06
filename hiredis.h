@@ -188,6 +188,8 @@ redisContext *redisConnectUnixNonBlock(const char *path, const char *auth);
 
 redisContext *redisConnectFd(int fd);
 
+int redisPing(redisContext *c);
+
 //authentication
 int redisAuth(redisContext *c, const char *auth);
 

@@ -820,6 +820,21 @@ redisContext *redisConnectFd(int fd) {
     return c;
 }
 
+int redisPing(redisContext *c) {
+    redisReply  *reply = NULL;
+
+    if (NULL == c) {
+        return REDIS_ERR;
+    }
+
+    reply = (redisReply *) redisFormatCommand(c, "ping");
+    if (NULL == reply || c->err != REDIS_OK) {
+        return redisReconnect(c);
+    }
+
+    return REDIS_OK;
+}
+
 int redisAuth(redisContext *c, const char *auth/* = NULL*/) {
     redisReply *reply = NULL;
 
